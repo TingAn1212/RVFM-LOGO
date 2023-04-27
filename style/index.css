@@ -10,7 +10,16 @@
 
 .container{
     position: fixed;
-    z-index: 1;
+    z-index: 10;
+}
+
+#droplet-container{
+    position: fixed;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
 #front-container{
@@ -50,4 +59,19 @@
 
 #tail2{
     left: 60vh;
+}
+
+.circle{
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: 1;
+}
+
+.cover{
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: 2;
+    background-color: white;
 }
